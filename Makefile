@@ -1,7 +1,7 @@
 all: hashtable
 
 hashtable: hashtable.c hash.c
-	cc -Wall -fstrict-aliasing -fkeep-inline-functions -fno-stack-protector -pedantic -ansi -O4 hash.c hashtable.c -S
+	cc -Wall -fstrict-aliasing -fkeep-inline-functions -fno-stack-protector -pedantic -ansi -O4 hash.c hashtable.c -ohashtable
 
 .PHONY: clean
 clean:
